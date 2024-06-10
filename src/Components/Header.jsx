@@ -8,7 +8,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="headerer"
+    <div
+      className="headerer"
       style={{
         position: "fixed",
         display: "flex",

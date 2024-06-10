@@ -53,7 +53,8 @@ const Footer = (props) => {
         width: "100vw",
       }}
     >
-      <div className="footerer"
+      <div
+        className="footerer"
         style={{
           display: "flex",
           justifyContent: "center",
