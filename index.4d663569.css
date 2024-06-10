@@ -11,6 +11,14 @@ html, body {
   overflow-x: hidden;
 }
 
+.headerer {
+  gap: 1rem;
+}
+
+.footerer {
+  gap: 1.5rem;
+}
+
 .portimage {
   max-width: 0;
 }
@@ -35,6 +43,10 @@ section.padding {
 }
 
 section img.background {
+  max-width: 0;
+}
+
+section img.background2, section img.background3 {
   height: 100%;
   object-fit: cover;
   pointer-events: none;
@@ -127,7 +139,6 @@ img.socialIcon {
 
 @media (min-width: 600px) {
   body {
-    width: 100%;
     flex-wrap: nowrap;
   }
 
@@ -135,11 +146,20 @@ img.socialIcon {
     max-width: 100%;
   }
 
+  .headerer {
+    gap: 2rem;
+  }
+
+  .footerer {
+    gap: 2.5rem;
+  }
+
   section.min-height {
     min-height: 100vh;
   }
 
   section img.background {
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
     pointer-events: none;
@@ -149,6 +169,10 @@ img.socialIcon {
     top: 0;
     left: 50%;
     transform: translate(-50%);
+  }
+
+  section img.background2 {
+    max-width: 0;
   }
 
   h1 {
