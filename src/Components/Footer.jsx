@@ -53,11 +53,11 @@ const Footer = (props) => {
         width: "100vw",
       }}
     >
-      <div
+      <div className="footerer"
         style={{
           display: "flex",
           justifyContent: "center",
-          gap: "2.5rem",
+          // gap: "2.5rem",
         }}
       >
         {email && (

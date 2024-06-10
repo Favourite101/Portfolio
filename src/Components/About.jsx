@@ -50,7 +50,7 @@ const detailOrQuote =
 const About = () => {
   return (
     <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
+      <img className="background3" src={image} alt={imageAltText} />
       <div
         style={{
           backgroundColor: "white",
