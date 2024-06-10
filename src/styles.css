@@ -17,6 +17,10 @@ body {
   width: 100%;
 }
 
+.portimage {
+  max-width: 0;
+}
+
 div#main {
   display: flex;
   flex-direction: column;
@@ -29,7 +33,7 @@ section {
 }
 
 section.min-height {
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 section.padding {
@@ -50,11 +54,11 @@ section img.background {
 
 h1 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 52px;
+  font-size: 46px;
   font-weight: 500;
   line-height: 0.8;
   margin: 0;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 h2 {
@@ -136,6 +140,12 @@ img.socialIcon {
     flex-wrap: nowrap;
     width: 100%;
   }
+  .portimage {
+    max-width: 100%;
+  }
+  section.min-height {
+    min-height: 100vh;
+  }  
   section img.background {
     height: 100%;
     left: 50%;

@@ -25,7 +25,7 @@ import "./styles.css";
  */
 const siteProps = {
   name: "Oluwatunmibi Favour",
-  title: "AI Engineer and Backend Developer",
+  title: "AI Engineer & Backend Developer",
   email: "ofavourite001@gmail.com",
   gitHub: "Favourite101",
   instagram: "fav.fantasy",
