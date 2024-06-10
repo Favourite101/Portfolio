@@ -67,11 +67,12 @@ section img.background2, section img.background3 {
 
 h1 {
   margin: 0;
-  padding-top: 150px;
   font-family: Cormorant Garamond, serif;
   font-size: 50px;
   font-weight: 500;
   line-height: .8;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 h2 {
