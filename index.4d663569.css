@@ -191,6 +191,7 @@ img.socialIcon {
 
   h1 {
     margin: 0;
+    padding-top: 100px;
     font-family: Cormorant Garamond, serif;
     font-size: 7rem;
     font-weight: 400;
