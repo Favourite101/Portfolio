@@ -25,6 +25,13 @@ body {
   gap: 1.5rem;
 }
 
+.list-u {
+  columns: 1;
+  font: 1rem;
+  margin: 10px;
+  gap: 2rem;
+}
+
 .portimage {
   max-width: 0;
 }
@@ -78,11 +85,11 @@ section img.background3 {
 
 h1 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 46px;
+  font-size: 50px;
   font-weight: 500;
   line-height: 0.8;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 h2 {
@@ -171,6 +178,12 @@ img.socialIcon {
   }
   .footerer {
     gap: 2.5rem;
+  }
+  .list-u {
+    columns: 2;
+    font: 1.25rem;
+    margin: 2rem 3rem;
+    gap: 3rem;
   }
   section.min-height {
     min-height: 100vh;

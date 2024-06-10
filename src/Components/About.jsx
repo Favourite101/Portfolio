@@ -24,19 +24,21 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a Software Engineering student studying at Babcock University. I am passionate about solving problems in new creative ways to drive innovation. By leveraging my backend experience I continually look for new and better ways to make tech accessible by all.";
+  "I'm a passionate developer with a foot in two worlds: building robust backend systems and exploring the potential of Artificial Intelligence. I thrive on crafting clean, efficient code for the server-side, ensuring smooth application functionality.  At the same time, I'm fascinated by AI and its ability to solve complex problems. I'm constantly learning and experimenting with machine learning and deep learning techniques, eager to contribute to the future of intelligent systems.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Backend development",
-  "Creating APIs",
-  "Creative writing",
+  "Programming Languages: Python, JavaScript, Java, PHP, C++",
+  "Database Management: MySQL, MongoDB",
+  "RESTful APIs",
+  "Problem Solving and Critical Thinking",
   "Data visualization",
-  "Implementing AI models",
   "Creating machine learning models",
+  "Prompt Engineering",
+  "Creative writing",
 ];
 
 /**
@@ -45,7 +47,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I aknowledge that I am a work in progress and I am open to learning new things. I am an aspiring AI Engineer and Backend Developer. I have experience in creating APIs, implementing AI models and creating machine learning models. I am also a creative writer and I love to write about my experiences and things I have learnt.";
+  "I aknowledge that I am a work in progress but I am open to learn new things. I have experience in database management, creating APIs and creating machine learning models. I am also a creative writer and I love to write about my experiences and things I have learnt.";
 
 const About = () => {
   return (
@@ -55,8 +57,8 @@ const About = () => {
         style={{
           backgroundColor: "white",
           width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
+          padding: "2rem",
+          margin: "4rem auto",
           textAlign: "center",
         }}
       >
@@ -64,12 +66,9 @@ const About = () => {
         <p className="large">{description}</p>
         <hr />
         <ul
+          className="list-u"
           style={{
             textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
           }}
         >
           {skillsList.map((skill) => (
@@ -77,7 +76,7 @@ const About = () => {
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p>{detailOrQuote}</p>
       </div>
     </section>
   );
