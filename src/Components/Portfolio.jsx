@@ -40,13 +40,13 @@ const projectList = [
     title: "School Management System",
     description:
       "Created a school management system for schools to manage students, teachers and classes. Worked on the backend and frontend of the system.",
-    url: "https://github.com/Favourite101/School-Management-System",
+    url: "https://uccschools.com.ng",
   },
   {
     title: "My Resume Site",
     description:
       "Created from Microsoft's resume workshop and deployed to Azure and GitHub pages. Includes my experience and design abilities.",
-    url: "https://favourite101.github.io/Portfolio",
+    url: "https://favourtunmibi.me",
   },
   {
     title: "ToDO List API",
