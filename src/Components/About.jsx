@@ -31,14 +31,14 @@ const description =
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Programming Languages: Python, JavaScript, Java, PHP, C++",
-  "Database Management: MySQL, MongoDB",
+  "Programming Languages: Python (Django), JavaScript (React & Angular), Java (SpringBoot), CSS (Bootstrap & Tailwind), PHP, C++",
   "RESTful APIs",
+  "Prompt Engineering",
   "Problem Solving and Critical Thinking",
   "Data visualization",
   "Creating machine learning models",
-  "Prompt Engineering",
   "Creative writing",
+  "Database Management: MySQL, PostgreSQL, MongoDB",
 ];
 
 /**
@@ -47,7 +47,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I aknowledge that I am a work in progress but I am open to learn new things. I have experience in database management, creating APIs and creating machine learning models. I am also a creative writer and I love to write about my experiences and things I have learnt.";
+  "I am a dedicated learner with a solid foundation in web development, API development, and machine learning model creation. My passion for creative writing allows me to effectively articulate my experiences and insights, showcasing my journey and the knowledge I've gained along the way.";
 
 const About = () => {
   return (

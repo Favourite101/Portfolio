@@ -97,6 +97,7 @@ h2 {
   font-weight: 400;
   margin: 0;
   padding-top: 1rem;
+  white-space: "nowrap";
 }
 
 h3 {
@@ -216,6 +217,7 @@ img.socialIcon {
     font-weight: 400;
     margin: 0;
     padding-top: 1rem;
+    white-space: nowrap;
   }
   
   h3 {

@@ -33,20 +33,20 @@ const projectList = [
   {
     title: "Tribble Newsletters",
     description:
-      "Led a team of developers to create a newsletter management system for the Tribble community to keep members up to date on the latest news and events. Worked on the backend and frontend of the system.",
+      "Collaborated with a team to build a newsletter management system using HTML, CSS, PHP, and JavaScript. As the backend developer, I implemented email subscriptions, storing emails in a database on XAMPP, and sending confirmation emails.",
     url: "https://tribblenews.000webhostapp.com",
   },
   {
     title: "School Management System",
     description:
-      "Created a school management system for schools to manage students, teachers and classes. Worked on the backend and frontend of the system.",
+      "Developed a comprehensive school management system for UCCSchools and currently expanding its capabilities. Built using HTML, CSS (Bootstrap), Python (Django), JavaScript, and Azure.",
     url: "https://uccschools.com.ng",
   },
   {
-    title: "My Resume Site",
+    title: "Kuda Clone",
     description:
-      "Created from Microsoft's resume workshop and deployed to Azure and GitHub pages. Includes my experience and design abilities.",
-    url: "https://favourtunmibi.me",
+      "Led a team to develop a Kuda clone using HTML, TailwindCSS, React, and Supabase. Worked on the frontend for the 'Profile' and 'Pay' sections, and on the backend with Supabase. Hosted on Azure.",
+    url: "https://white-ocean-04314c40f.5.azurestaticapps.net/",
   },
   {
     title: "ToDO List API",
