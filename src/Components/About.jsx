@@ -1,35 +1,11 @@
-/**
- * About component
- *
- * Space for you to describe more about yourself.
- */
-
-import React from "react";
-
-/**
- * About background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that
- * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
- */
+import React, { useEffect, useRef, useState } from "react";
 import image from "../images/ch4.png";
 
 const imageAltText = "purple and blue abstract background";
 
-/**
- * Sort description that expands on your title on the Home component.
- */
 const description =
   "I'm a passionate developer with a foot in two worlds: building robust backend systems and exploring the potential of Artificial Intelligence. I thrive on crafting clean, efficient code for the server-side, ensuring smooth application functionality.  At the same time, I'm fascinated by AI and its ability to solve complex problems. I'm constantly learning and experimenting with machine learning and deep learning techniques, eager to contribute to the future of intelligent systems.";
 
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */
 const skillsList = [
   "Programming Languages: Python (Django), JavaScript (React & Angular), Java (SpringBoot), CSS (Bootstrap & Tailwind), PHP, C++",
   "RESTful APIs",
@@ -41,19 +17,42 @@ const skillsList = [
   "Database Management: MySQL, PostgreSQL, MongoDB",
 ];
 
-/**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
- */
 const detailOrQuote =
   "I am a dedicated learner with a solid foundation in web development, API development, and machine learning model creation. My passion for creative writing allows me to effectively articulate my experiences and insights, showcasing my journey and the knowledge I've gained along the way.";
 
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Stop observing after the section is visible
+        }
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the section is in view
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="padding" id="about">
+    <section className="padding" id="about" ref={sectionRef}>
       <img className="background3" src={image} alt={imageAltText} />
       <div
+        className={`fade-in ${isVisible ? "visible" : ""}`} // Add class based on visibility
         style={{
           backgroundColor: "white",
           width: "50%",

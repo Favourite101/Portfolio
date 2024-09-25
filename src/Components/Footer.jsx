@@ -9,6 +9,7 @@
  */
 import React from "react";
 import PropTypes from "prop-types";
+import { motion } from "framer-motion"; // Import motion for animations
 
 import devDotToIcon from "../images/socials/devdotto.svg";
 import envelopeIcon from "../images/socials/envelope.svg";
@@ -58,60 +59,47 @@ const Footer = (props) => {
         style={{
           display: "flex",
           justifyContent: "center",
-          // gap: "2.5rem",
         }}
       >
         {email && (
-          <a href={`mailto:${email}`}>
+          <motion.a href={`mailto:${email}`} whileHover={{ scale: 1.3 }}>
             <img src={envelopeIcon} alt="email" className="socialIcon" />
-          </a>
+          </motion.a>
         )}
         {devDotTo && (
-          <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
+          <motion.a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
             <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
-          </a>
+          </motion.a>
         )}
         {gitHub && (
-          <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
+          <motion.a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
             <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
-          </a>
+          </motion.a>
         )}
         {instagram && (
-          <a
-            href={`https://www.instagram.com/${instagram}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <motion.a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
             <img src={instagramIcon} alt="Instagram" className="socialIcon" />
-          </a>
+          </motion.a>
         )}
         {linkedIn && (
-          <a
-            href={`https://www.linkedin.com/in/${linkedIn}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <motion.a href={`https://www.linkedin.com/in/${linkedIn}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
             <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
-          </a>
+          </motion.a>
         )}
         {medium && (
-          <a href={`https://medium.com/@${medium}`} target="_blank" rel="noopener noreferrer">
+          <motion.a href={`https://medium.com/@${medium}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
             <img src={mediumIcon} alt="Medium" className="socialIcon" />
-          </a>
+          </motion.a>
         )}
         {twitter && (
-          <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer">
+          <motion.a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
             <img src={twitterIcon} alt="Twitter" className="socialIcon" />
-          </a>
+          </motion.a>
         )}
         {youTube && (
-          <a
-            href={`https://www.youtube.com/c/${youTube}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <motion.a href={`https://www.youtube.com/c/${youTube}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
             <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
-          </a>
+          </motion.a>
         )}
       </div>
       <p className="small" style={{ marginTop: 0, color: "white" }}>

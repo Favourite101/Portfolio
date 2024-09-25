@@ -35,7 +35,7 @@ const Home = ({ name, title }) => {
         <h2>{title}</h2>
       </div>
       <div style={{ position: "absolute", bottom: "1rem", left: "50%" }}>
-        <a href="#about">
+        <a href="#portfolio">
           <img
             src={arrowSvg} style={{ height: "3rem", width: "3rem", transform: "translate(-50%, 0)" }} alt={imageAltText} />
         </a>
