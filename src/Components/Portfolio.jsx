@@ -23,27 +23,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "Tribble Newsletters",
+    title: "UCCSchools Management System",
     description:
-      "Collaborated with a team to build a newsletter management system using HTML, CSS, PHP, and JavaScript. As the backend developer, I implemented email subscriptions, storing emails in a database on XAMPP, and sending confirmation emails.",
-    url: "https://tribblenews.000webhostapp.com",
+      "Developed and currently expanding a robust school management system for UCCSchools, integrating student records, and cloud-based deployment. Built with Django, Bootstrap, JavaScript, and hosted on Azure.",
+    url: "https://uccschools.com.ng",
   },
   {
-    title: "School Management System",
+    title: "Student Room Booking System",
     description:
-      "Developed a comprehensive school management system for UCCSchools and currently expanding its capabilities. Built using HTML, CSS (Bootstrap), Python (Django), JavaScript, and Azure.",
-    url: "https://uccschools.com.ng",
+      "Engineered a full-stack room booking system for students, streamlining reservation processes and availability tracking. Utilized React, and SpringBoot, ensuring seamless user experience and efficient backend operations.",
+    url: "https://student-room-booking-system-frontend.vercel.app/",
   },
   {
     title: "Kuda Clone",
     description:
-      "Led a team to develop a Kuda clone using HTML, TailwindCSS, React, and Supabase. Worked on the frontend for the 'Profile' and 'Pay' sections, and on the backend with Supabase. Hosted on Azure.",
-    url: "https://white-ocean-04314c40f.5.azurestaticapps.net/",
+      "Led the development of a Kuda banking app clone, implementing key features for transactions, user profiles, and authentication. Built with React, TailwindCSS, and Supabase, ensuring scalability and smooth UI/UX.",
+    url: "https://kuda-clone-9bzr.vercel.app/",
   },
   {
-    title: "ToDO List API",
-    description: "Created a RESTful API for a ToDO list application using Python (Django).",
-    url: "https://github.com/Favourite101/ToDO-List-API",
+    title: "Movie Management API",
+    description:
+      "Designed and implemented a high-performance RESTful API for managing movies, featuring CRUD operations, authentication, and database optimization. Built with SpringBoot and MySQL.",
+    url: "https://github.com/Favourite101/springboot-movie-api",
   },
 ];
 

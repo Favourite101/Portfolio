@@ -14,7 +14,6 @@ const siteProps = {
   title: "Software Engineer",
   email: "ofavourite001@gmail.com",
   gitHub: "Favourite101",
-  instagram: "fav.fantasy",
   linkedIn: "favourtunmibi",
   medium: "favourwrites",
   twitter: "Fav_fantasy_",

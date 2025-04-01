@@ -4,21 +4,21 @@ import image from "../images/ch4.png";
 const imageAltText = "purple and blue abstract background";
 
 const description =
-  "I'm a passionate developer with a foot in two worlds: building robust backend systems and exploring the potential of Artificial Intelligence. I thrive on crafting clean, efficient code for the server-side, ensuring smooth application functionality.  At the same time, I'm fascinated by AI and its ability to solve complex problems. I'm constantly learning and experimenting with machine learning and deep learning techniques, eager to contribute to the future of intelligent systems.";
+  "I'm a passionate software engineer with a strong focus on backend development while also building intuitive and responsive frontends. I thrive on designing scalable, efficient server-side systems that ensure seamless application performance. At the same time, I enjoy working with modern frontend technologies to create well-rounded user experiences. Constantly learning and refining my skills, I aim to build robust, high-performing applications that solve real-world problems.";
 
 const skillsList = [
-  "Programming Languages: Python (Django), JavaScript (React & Angular), Java (SpringBoot), CSS (Bootstrap & Tailwind), PHP, C++",
-  "RESTful APIs",
-  "Prompt Engineering",
+  "Software Engineering Principles: Design Patterns, Scalability, Clean Code, Test-Driven Development (TDD)",
+  "Programming Languages: Java (Spring Boot), Python (Django), JavaScript (React & Angular), C#",
+  "Backend Development: High-Performance RESTful APIs, Security & Authentication (OAuth, JWT)",
+  "Frontend Development: Modern UI Development (React, Angular), State Management",
+  "Database Management: Relational & NoSQL Databases (MySQL, PostgreSQL, MongoDB)",
+  "DevOps & Cloud: CI/CD Pipelines, Cloud Platforms (AWS, Azure)",
   "Problem Solving and Critical Thinking",
-  "Data visualization",
-  "Creating machine learning models",
-  "Creative writing",
-  "Database Management: MySQL, PostgreSQL, MongoDB",
+  "Technical Writing and Documentation",
 ];
 
 const detailOrQuote =
-  "I am a dedicated learner with a solid foundation in web development, API development, and machine learning model creation. My passion for creative writing allows me to effectively articulate my experiences and insights, showcasing my journey and the knowledge I've gained along the way.";
+  "I’m Favour Oluwatunmibi, a software engineer on a mission to solve real-world problems through code. Every line I write, every system I design, is driven by one question: How can technology make this better?";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);

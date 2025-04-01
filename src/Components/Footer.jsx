@@ -14,7 +14,6 @@ import { motion } from "framer-motion"; // Import motion for animations
 import devDotToIcon from "../images/socials/devdotto.svg";
 import envelopeIcon from "../images/socials/envelope.svg";
 import gitHubIcon from "../images/socials/github.svg";
-import instagramIcon from "../images/socials/instagram.svg";
 import linkedInIcon from "../images/socials/linkedin.svg";
 import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
@@ -28,18 +27,7 @@ import youTubeIcon from "../images/socials/youtube.svg";
  */
 
 const Footer = (props) => {
-  const {
-    devDotTo,
-    email,
-    gitHub,
-    instagram,
-    linkedIn,
-    medium,
-    name,
-    primaryColor,
-    twitter,
-    youTube,
-  } = props;
+  const { devDotTo, email, gitHub, linkedIn, medium, name, primaryColor, twitter, youTube } = props;
 
   return (
     <div
@@ -67,37 +55,62 @@ const Footer = (props) => {
           </motion.a>
         )}
         {devDotTo && (
-          <motion.a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
+          <motion.a
+            href={`https://dev.to/${devDotTo}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.3 }}
+          >
             <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
           </motion.a>
         )}
         {gitHub && (
-          <motion.a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
+          <motion.a
+            href={`https://github.com/${gitHub}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.3 }}
+          >
             <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
           </motion.a>
         )}
-        {instagram && (
-          <motion.a href={`https://www.instagram.com/${instagram}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
-            <img src={instagramIcon} alt="Instagram" className="socialIcon" />
-          </motion.a>
-        )}
         {linkedIn && (
-          <motion.a href={`https://www.linkedin.com/in/${linkedIn}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
+          <motion.a
+            href={`https://www.linkedin.com/in/${linkedIn}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.3 }}
+          >
             <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
           </motion.a>
         )}
         {medium && (
-          <motion.a href={`https://medium.com/@${medium}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
+          <motion.a
+            href={`https://medium.com/@${medium}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.3 }}
+          >
             <img src={mediumIcon} alt="Medium" className="socialIcon" />
           </motion.a>
         )}
         {twitter && (
-          <motion.a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
+          <motion.a
+            href={`https://twitter.com/${twitter}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.3 }}
+          >
             <img src={twitterIcon} alt="Twitter" className="socialIcon" />
           </motion.a>
         )}
         {youTube && (
-          <motion.a href={`https://www.youtube.com/c/${youTube}`} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.3 }}>
+          <motion.a
+            href={`https://www.youtube.com/c/${youTube}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.3 }}
+          >
             <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
           </motion.a>
         )}
