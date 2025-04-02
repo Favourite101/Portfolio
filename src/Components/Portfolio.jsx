@@ -26,7 +26,7 @@ const projectList = [
     title: "UCCSchools Management System",
     description:
       "Developed and currently expanding a robust school management system for UCCSchools, integrating student records, and cloud-based deployment. Built with Django, Bootstrap, JavaScript, and hosted on Azure.",
-    url: "https://uccschools.com.ng",
+    url: "https://uccschools.azurewebsites.net",
   },
   {
     title: "Student Room Booking System",
